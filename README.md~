@@ -1,0 +1,18 @@
+## Compiling the HANA plugin source code:
+Clone the repository and add all the jars from the folder **lib** in the **SAP Internal Directory** to your Build Path.
+
+## Installing GeoServer with HANA plugin on Linux:
+1. Copy the folder **geoserver-2.9-SNAPSHOT** from **SAP Internal Directory** into your desired directory.
+2. Add an environment variable to save the location of GeoServer by typing the following command:<br />
+echo **"export GEOSERVER_HOME=path/geoserver-2.9-SNAPSHOT"** >> ~/.profile <br />. ~/.profile
+. ~/.profile
+3. Make yourself the owner of the geoserver folder: <br />sudo chown -R <user_name> **path/geoserver-2.9-SNAPSHOT/**
+4. Copy **ngdbc.jar** and **gt-jdbc-hana-15-SNAPSHOT.jar** from **SAP Internal Directory** to **path/geoserver-2.9-SNAPSHOT/webapps/geoserver/WEB-INF/lib/**
+5. Start GeoServer by changing into the directory **path/geoserver-2.9-SNAPSHOT/bin** and executing the startup script.
+
+## Documentation:
+1. Blog- GeoServer with SAP HANA.docx (SAP Internal Directory)
+2. Guide- GeoServer with SAP HANA.docx (SAP Internal Directory)
+
+
+**SAP Internal Directory:** \\trextest\trex_test\gis\03_partner\opensource\geoserver\

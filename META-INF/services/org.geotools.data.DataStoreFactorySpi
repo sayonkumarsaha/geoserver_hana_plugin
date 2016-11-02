@@ -1,0 +1,2 @@
+org.geotools.data.hana.SAP_HANA_DataStoreFactory
+org.geotools.data.hana.SAP_HANA_JNDIDataStoreFactory
